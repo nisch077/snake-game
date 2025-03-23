@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    color: white; /* Text color */
+}
+
+#gameCanvas {
+    border: 5px solid #333; /* Thicker border */
+    background-color: #222; /* Darker background for canvas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#score {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px 25px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+#gameOverText {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
